@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="475.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.DealershipController">
+   <children>
+      <Label fx:id="title" layoutX="226.0" layoutY="9.0" text="EXOTIC CAR DEALERSHIP">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutY="53.0" prefHeight="409.0" prefWidth="141.0">
+         <children>
+            <CheckBox fx:id="cbAston" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Aston Martin">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="cbBMW" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="BMW">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="cbFerrari" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Ferrari">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="cbGenesis" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Genesis">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="cbLambo" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Lamborghini">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="cbMaserati" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Maserati">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="cbMcLaren" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="McLaren">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="cbMercedes" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Mercedes">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </CheckBox>
+            <CheckBox fx:id="cbRolls" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Rolls-Royce">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </CheckBox>
+            <Separator prefWidth="200.0" />
+            <RadioButton fx:id="rbAll" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="All Colors">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="colors" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbBlack" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Black" toggleGroup="$colors">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="rbBlue" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Blue" toggleGroup="$colors">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="rbGreen" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Green" toggleGroup="$colors">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="rbOrange" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Orange" toggleGroup="$colors">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="rbRed" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Red" toggleGroup="$colors">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="rbWhite" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="White" toggleGroup="$colors">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="rbYellow" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Yellow" toggleGroup="$colors">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="rbGold" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Gold" toggleGroup="$colors">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </RadioButton>
+            <Separator prefWidth="200.0" />
+            <RadioButton fx:id="rbPriceAscending" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Ascending">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="sort" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbPriceDescending" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Descending" toggleGroup="$sort">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </RadioButton>
+            <Separator prefWidth="200.0" />
+            <CheckBox fx:id="cbConvertible" mnemonicParsing="false" onAction="#onCheckBoxClicked" text="Convertible">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" />
+               </padding>
+            </CheckBox>
+         </children>
+      </VBox>
+      <ScrollPane hbarPolicy="NEVER" layoutX="132.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="456.0" vbarPolicy="ALWAYS">
+         <content>
+            <AnchorPane fx:id="p1" minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="456.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
