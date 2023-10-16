@@ -1,4 +1,4 @@
-# CarDealership
+# Car Dealership Program
 
 This application provides a user-friendly interface for exploring and buying exotic cars. 
 Users can filter and sort cars, view detailed information, make secure payments, and receive purchase receipts. 
